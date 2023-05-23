@@ -10,3 +10,6 @@ Dev Connector App is a social media platform designed specifically for developer
 
 ## Technologies Used
 The Dev Connector App is built using the MERN stack.
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
