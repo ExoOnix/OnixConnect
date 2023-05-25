@@ -50,26 +50,8 @@ router.post('/', [
 
     // Get users gravatar
 
-    const avatar = gravatar.url(email, {
-        s: '200',
-        r: 'pg',
-        d: 'mm'
-    })
-
-    user = new User({
-        name,
-        email,
-        avatar,
-        password
-    })
 
 
-    // Encrypt password
-    const salt = await bcrypt.genSalt(10)
-
-    user.password = await bcrypt.hash(password, salt)
-
-    await user.save()
 
 
     // return json tocken
