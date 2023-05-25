@@ -1,5 +1,6 @@
 example of a default.json file. It has to be in this directory:
 
 {
-    "mongoURI": "<MONGOURI>"
+    "mongoURI": "<MONGO_URI>",
+    "jwtSecret": "<Secret_Token>"
 }
