@@ -1,12 +1,19 @@
 # Dev Connector App
 
-
-<p align="center">
-<iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-
-<iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-
-</p>
+<div align="center">
+  <a href="https://github.com/ExoOnix/DEVCon">
+    <img src="https://img.shields.io/github/stars/ExoOnix/DEVCon?style=for-the-badge" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/ExoOnix/DEVCon/fork">
+    <img src="https://img.shields.io/github/forks/ExoOnix/DEVCon?style=for-the-badge" alt="GitHub forks" />
+  </a>
+  <a href="https://github.com/ExoOnix/DEVCon/issues">
+    <img src="https://img.shields.io/github/issues/ExoOnix/DEVCon?style=for-the-badge" alt="GitHub issues" />
+  </a>
+  <a href="https://github.com/ExoOnix/DEVCon/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ExoOnix/DEVCon?style=for-the-badge" alt="GitHub license" />
+  </a>
+</div>
 
 ## Overview
 Dev Connector App is a social media platform designed specifically for developers. It provides a space where developers can connect with each other, share their work, collaborate on projects, and explore new opportunities. This platform aims to foster a vibrant and supportive community for developers to network, learn, and grow together.
