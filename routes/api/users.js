@@ -28,7 +28,7 @@ router.post('/', [
     try {
         
     // send if user exists
-    
+
 
     let user = await User.findOne({ email })
 
