@@ -7,7 +7,7 @@ const Profile = require('../../models/Profile')
 const User = require('../../models/User')
 
 // @route   GET api/profile/me
-// @desc    Get current users profile
+// @desc    Get current users profile info
 // @access  Private
 router.get('/me', auth, async (req, res) => {
     try {
@@ -20,6 +20,7 @@ router.get('/me', auth, async (req, res) => {
 
         res.json(profile)
         
+
     } catch(err) {
         console.error(err.message)
         res.status(500).send('Server Error')
