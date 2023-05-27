@@ -152,8 +152,6 @@ router.delete('/', auth, async (req, res) => {
 
         // Remove user
         await User.findOneAndRemove({ _id: req.user.id })
-        
-
 
         res.json({ msg: 'User removed' })
     } catch (err) {
