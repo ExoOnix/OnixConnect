@@ -15,6 +15,9 @@
 </a>
 </div>
 
+## Warning
+This project is not complete and is not in a usable state as of roght now.
+
 ## Overview
 Dev Connector App is a social media platform designed specifically for developers. It provides a space where developers can connect with each other, share their work, collaborate on projects, and explore new opportunities. This platform aims to foster a vibrant and supportive community for developers to network, learn, and grow together.
 
