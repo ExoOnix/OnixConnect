@@ -15,8 +15,7 @@
 </a>
 </div>
 
-## Warning
-This project is not complete and is not in a usable state as of right now.
+## Status
 
 Current State:
 - Backend complete: 96%
