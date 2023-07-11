@@ -1,4 +1,4 @@
-# Dev Connector App
+# Onix Connect App
 
 <div align="center">
   <a href="https://github.com/ExoOnix/DEVCon">
@@ -26,7 +26,7 @@ Current State:
 - Frontend complete: 0%
 
 ## Overview
-Dev Connector App is a social media platform designed specifically for developers. It provides a space where developers can connect with each other, share their work, collaborate on projects, and explore new opportunities. This platform aims to foster a vibrant and supportive community for developers to network, learn, and grow together.
+Onix Connect App is a social media platform designed specifically for developers. It provides a space where developers can connect with each other, share their work, collaborate on projects, and explore new opportunities. This platform aims to foster a vibrant and supportive community for developers to network, learn, and grow together.
 
 ## Features
 - User Profiles: Users can create personalized profiles to showcase their skills, experience, and projects.
@@ -34,7 +34,7 @@ Dev Connector App is a social media platform designed specifically for developer
 - Connections: Users can connect with other developers, expanding their professional network.
 
 ## Technologies Used
-The Dev Connector App is built using the MERN stack.
+The Onix Connect App is built using the MERN stack.
 
 ## License
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
