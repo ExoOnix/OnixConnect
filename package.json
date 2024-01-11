@@ -10,7 +10,7 @@
     "dev": "concurrently --raw \"npm run server\" \"npm run client\""
   },
   "author": "ExoticOnix",
-  "license": "MIT",
+  "license": "CC BY-NC 4.0",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^8.2.2",
