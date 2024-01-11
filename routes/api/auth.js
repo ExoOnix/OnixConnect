@@ -1,91 +1,87 @@
-const express = require('express')
-const router = express.Router()
-const bcrypt = require('bcryptjs')
-const auth = require('../../middleware/auth')
-const jwt = require('jsonwebtoken')
-const config = require('config')
-const { check, validationResult } = require('express-validator')
+const express = require("express");
+const router = express.Router();
+const bcrypt = require("bcryptjs");
+const auth = require("../../middleware/auth");
+const jwt = require("jsonwebtoken");
+const config = require("config");
+const { check, validationResult } = require("express-validator");
 
-const user = require('../../models/User')
+const user = require("../../models/User");
 
 // @route   GET api/auth
 // @desc    Test route
 // @access  Public
 
-router.get('/', auth, async (req, res) => {
-    try {
-        const user = await User.findById(req.user.id).select('-password')
-        res.json(user)
-    } catch(err) {
-        console.log(err.message)
-        res.status(500).send('Server Error')
-    }
+router.get("/", auth, async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id).select("-password");
+    res.json(user);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).send("Server Error");
+  }
 });
-
-
 
 // @route   GET api/auth
 // @desc    Authenticate input and get token
 // @access  Public
 
-router.post('/', [
-    check('email', 'Please include a valid email').isEmail(),
-    check('password', 'Password required').exists()
-], async (req, res) => {
-    const errors = validationResult(req)
-    if(!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() })
+router.post(
+  "/",
+  [
+    check("email", "Please include a valid email").isEmail(),
+    check("password", "Password required").exists(),
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
     }
 
-    const { name, email, password } = req.body
+    const { name, email, password } = req.body;
 
     try {
-        
-    // send if user exists
+      // send if user exists
 
-    let user = await User.findOne({ email })
+      let user = await User.findOne({ email });
 
-    if(!user) {
-        return res.status(400).json({ errors: [{ msg: 'Invalid credentials' }] })
-    }
-
-    // Get users gravatar
-
-
-    const isMatch = await bcrypt.compare(password, user.password)
-
-    if(!isMatch) {
+      if (!user) {
         return res
-            .status(400)
-            .json({ errors: [{ msg: 'Invalid Credentials' }] })
-    }
+          .status(400)
+          .json({ errors: [{ msg: "Invalid credentials" }] });
+      }
 
-    // return json tocken
-    const payload = {
+      // Get users gravatar
+
+      const isMatch = await bcrypt.compare(password, user.password);
+
+      if (!isMatch) {
+        return res
+          .status(400)
+          .json({ errors: [{ msg: "Invalid Credentials" }] });
+      }
+
+      // return json tocken
+      const payload = {
         user: {
-            id: user.id
-        }
-    }
+          id: user.id,
+        },
+      };
 
-    jwt.sign(
+      jwt.sign(
         payload,
-        config.get('jwtSecret'),
+        config.get("jwtSecret"),
         { expiresIn: 360000 },
         (err, token) => {
-            if(err) throw err
-            res.json({ token })
-
-        }
-    )
-
-
-    } catch(err) {
-        console.error(err.message)
-        res.status(500).send('Server error')
+          if (err) throw err;
+          res.json({ token });
+        },
+      );
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send("Server error");
     }
+  },
+);
 
-
-
-});
-
-module.exports = router
+module.exports = router;
