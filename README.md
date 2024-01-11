@@ -24,7 +24,7 @@ This project is not complete and is not in a usable state as of right now.
 Current State:
 
 - Backend complete: 100%
-- Frontend complete: 0%
+- Frontend complete: 3%
 
 ## Overview
 
