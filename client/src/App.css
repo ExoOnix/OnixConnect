@@ -81,7 +81,7 @@
   margin-bottom: 1rem;
 }
 .text-primary {
-  color: #f9e802;
+  color: #d38e0d;
 }
 .round-img {
   border-radius: 50%;
@@ -92,7 +92,7 @@
   margin: 1.5rem 0;
 }
 .bg-primary {
-  background-color: #f9e802;
+  background-color: #d38e0d;
   color: #fff;
 }
 .bg-light {
@@ -130,11 +130,11 @@
   transition: all 0.2s ease-in;
 }
 .btn.btn-primary {
-  background-color: #f9e802;
+  background-color: #d38e0d;
   color: #fff;
 }
 .btn.btn-primary:hover {
-  background: #fded17;
+  background: #eb9e0e;
 }
 .btn.btn-dark {
   background-color: #343a40;
@@ -169,7 +169,7 @@
   color: #333;
 }
 .alert.alert-primary {
-  background-color: #f9e802;
+  background-color: #d38e0d;
   color: #fff;
 }
 .alert.alert-dark {
@@ -193,7 +193,7 @@
   color: #333;
 }
 .badge.badge-primary {
-  background-color: #f9e802;
+  background-color: #d38e0d;
   color: #fff;
 }
 .badge.badge-dark {
@@ -283,7 +283,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #f9e802;
+  color: #d38e0d;
 }
 ul {
   list-style: none;
@@ -300,7 +300,7 @@ img {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px #f9e802;
+  border-bottom: solid 1px #d38e0d;
   opacity: 0.9;
 }
 .navbar ul {
@@ -312,7 +312,7 @@ img {
   margin: 0 0.25rem;
 }
 .navbar a:hover {
-  color: #f9e802;
+  color: #d38e0d;
 }
 .landing {
   position: relative;
